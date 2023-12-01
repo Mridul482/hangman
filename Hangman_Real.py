@@ -2,7 +2,6 @@ import random
 from HangmanWords import words
 from HangmanVisuals import lives_visual
 import string
-
 #words = ["aback","abaft","abandoned","abashed","aberrant","abhorrent","abiding","abject","ablaze","able","abnormal","aboard","aboriginal","abortive","deserted","detailed","determined","devilish","didactic","different","difficult","diligent","dirty","disagreeable","disastrous"]
 
 def get_valid_word(words):
