@@ -4,12 +4,12 @@ from HangmanVisuals import lives_visual
 import string
 #words = ["aback","abaft","abandoned","abashed","aberrant","abhorrent","abiding","abject","ablaze","able","abnormal","aboard","aboriginal","abortive","deserted","detailed","determined","devilish","didactic","different","difficult","diligent","dirty","disagreeable","disastrous"]
 
+
 def get_valid_word(words):
 		word = random.choice(words)  # randomly chooses something from the list
 		while "-" in word or " " in word:
 				word = random.choice(words)
 		return word.upper()
-
 
 def hangman():
 		word = get_valid_word(words)
@@ -20,7 +20,9 @@ def hangman():
 		score = 0
 
 		# getting user input
+
 		while len(word_letters) > 0 and lives > 0: 
+				print("Welcome to Mridul's Hangman")
 				print(f"You have these many lives left: {lives}") #printing and sorting the used letters
 				print("You have used these letters: ", ' '.join(sorted(used_letters))) 
 				# what current word is (ie W - R D)
